@@ -1,0 +1,30 @@
+{
+  "name": "pg-error-logger",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./index",
+  "scripts": {
+    "prepack": "npx tsc --noEmit false",
+    "postpublish": "npm run clean",
+    "clean": "npx module-kit-clean"
+  },
+  "keywords": ["pg", "logger", "error"],
+  "author": {
+    "name": "Vladislav Zaynchkovsky",
+    "email": "zvsx001@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.*"
+  },
+  "devDependencies": {
+    "module-kit": "^0.0.1",
+    "typescript": "^4.2.3"
+  },
+  "peerDependencies": {
+    "pg": "*"
+  },
+  "repository": {
+    "url": "https://github.com/zvs001/pg-error-logger"
+  }
+}
